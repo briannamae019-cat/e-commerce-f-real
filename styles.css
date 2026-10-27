@@ -207,6 +207,11 @@ HIGHLIGHTS
 
 .highlights {
   justify-content:flex-start;
+  padding: 0 24px;
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
  
 }
 
@@ -231,14 +236,8 @@ HIGHLIGHTS
   margin-bottom: 16px;
 }
 
-.highlights {
-  padding: 0 24px;
-  width: calc(100% / 3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+
+
 .highlight__para {
   text-align: center;
   max-width: 280;
@@ -273,7 +272,31 @@ FEATURES
 */
 
 #features {
-  height: 1000px;
   background-color: rgba(115, 66, 214, 0.1);
-  position: relative;
+  padding-top: 8vw;
+}
+
+.book {
+  display: flex;
+}
+
+.book {
+  width: 25%;
+  padding: 24px;
+}
+
+.book__img {
+  max-height: 300px;
+  transition: all 300ms ease;;
+}
+
+.book__img__wrapper {
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+}
+
+.book:hover .book__img {
+  transform: scale(1.03);
 }
