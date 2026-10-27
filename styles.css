@@ -365,9 +365,15 @@ footer {
   display:flex;
 }
 
+footer .row {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
 .footer__logo--img {
   width: 160px;
-  filter: grayscale(1) (1);
+  filter: grayscale(1) invert(1) contrast (1);
 }
 
 .footer__link,
