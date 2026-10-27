@@ -276,12 +276,12 @@ FEATURES
   padding-top: 8vw;
 }
 
-.book {
+.books {
   display: flex;
   flex-wrap: wrap;
 }
 
-.book {
+.books {
   width: 25%;
   padding: 24px;
 }
