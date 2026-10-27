@@ -278,6 +278,7 @@ FEATURES
 
 .book {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .book {
