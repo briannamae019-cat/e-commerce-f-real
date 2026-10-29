@@ -116,6 +116,7 @@ li {
   }
 }
 
+
 .menu__backdrop {
   position: absolute;
   background-color: #242424;
@@ -158,6 +159,10 @@ right: 20px;
 top: 10px;
 padding: 8px;
 color: white;
+}
+
+.menu__backdrop .btn__menu--close {
+  display: block;
 }
 
 /*
@@ -503,4 +508,24 @@ button {
 
 .highlight:not(:last-child) {
   margin-bottom: 24px;
+}
+
+/* Desktop navigation */
+.nav__links {
+  display: flex;
+}
+
+.btn__menu {
+  display: none;
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+
+  .btn__menu:not(.btn__menu--close) {
+    display: block;
+  }
 }
