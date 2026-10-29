@@ -20,7 +20,6 @@ body {
 nav {
   height: 80px;
   display: flex;
-
 }
 
 img {
@@ -64,7 +63,6 @@ a:hover {
 
 ul {
   display: flex;
-  
 }
 
 li {
@@ -106,6 +104,16 @@ li {
   border: none;
   color:#7342d6;
   display: none;
+}
+
+@media (max-width: 768px) {
+  .btn__menu {
+    display: block;
+  }
+
+.nav__links {
+    display: none;
+  }
 }
 
 .menu__backdrop {
@@ -366,6 +374,9 @@ FEATURES
 }
 
 .book__img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
   max-height: 300px;
   transition: all 300ms ease;
   cursor: no-drop;
